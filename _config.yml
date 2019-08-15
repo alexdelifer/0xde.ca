@@ -1,0 +1,7 @@
+header_pages:
+  - index.md
+  - downloads.md
+
+plugins:
+  - jekyll-seo-tag
+
