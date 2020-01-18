@@ -1,7 +1,14 @@
-header_pages:
-  - index.md
-  - downloads.md
+title: Jekyll URL Shortener
+description: ✂️🔗 This is a template repository for making URL Shorteners with Jekyll and GitHub Pages. Create short URLs that can be easily shared, tweeted, or emailed to friends. Fork this repo to get started.
+logo: /assets/img/logo.png
+show_downloads: false
+#google_analytics:
+theme: jekyll-theme-minimal
+
+permalink: /:slug/
 
 plugins:
-  - jekyll-seo-tag
+  - jekyll-redirect-from
 
+
+repository: https://github.com/alexdelifer/0xde.ca

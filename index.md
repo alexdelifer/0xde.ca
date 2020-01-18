@@ -1,15 +1,12 @@
 ---
-page.title: 0xde.ca
-title: /
-layout: home
-permalink: /
+layout: default
 ---
 
-# Hello World!
+{% assign redirects = site.pages | where_exp: "item", "item.redirect_to != nil" %}
+{% for page in redirects %}
+  [{{ page.url }}]({{ page.url | relative_url }}) 🔀 `{{ page.redirect_to }}`
 
-```
-#!/bin/bash
-echo "this is a code block"
-sleep 100000000s
-```
-:wq
+  > {{ page.title | escape }}
+
+  ---
+{% endfor %}
